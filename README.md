@@ -1,7 +1,7 @@
 # PromptEngineeringChatbot
 
 ## Project Description
-This project implements a pseudo "chain-of-thought" or prompt engineering approach in a smaller language model (TinyLlama 1.1B). The chatbot breaks down its reasoning process into explicit steps when answering questions, similar to how larger models like ChatGPT approach problems. This enhances debugging.
+This project implements a pseudo "chain-of-thought" or prompt engineering approach in a smaller language model (TinyLlama 1.1B). The chatbot breaks down its reasoning process into explicit steps when answering questions, similar to how larger models like ChatGPT approach problems. This enhances debugging  and specific use case scenarios.
 
 comparision_demo.py is a comparision bot that outputs the same question in both prompt engineered style and without it to show difference.
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 Run the demo script:
 ```bash
-python 01style.py
+python PromptEngineering.py
 ```
 
 The script will:
@@ -51,7 +51,7 @@ The script will:
 3. Display thinking process and generation time for each response
 
 ### Example Output:
-    Present in txt files in this folder.
+    Present in alice_analysis..txt and comparision_..txt files in this folder.
 
 ## Customization
 
@@ -69,9 +69,12 @@ The project uses:
 - Half-precision (FP16) for efficient memory usage
 
 ## Files
-- `01style.py`: Main implementation
+- `PromptEngineering.py`: Main implementation
+- `comparision_demo.py` : Comparision Feature
 - `requirements.txt`: Required Python packages
 - `README.md`: Project documentation
+- `alice_analysis_...txt` : Example use case with Alice in Wonderland pdf
+- `comparision_20...txt` : Example cases with answers in prompt engineered and non-engineered responses.
 
 ## Memory Usage
 - Base model: ~2.2GB VRAM
@@ -82,3 +85,4 @@ The project uses:
 - Response quality limited by model size (1.1B parameters)
 - May require prompt engineering for best results
 - Generation times vary based on input complexity
+- To use graphic card to unlock a much faster experience, needs specific cuda and torch versions that are respective to user's card and preinstalled drivers.
