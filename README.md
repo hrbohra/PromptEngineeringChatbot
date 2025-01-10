@@ -85,4 +85,4 @@ The project uses:
 - Response quality limited by model size (1.1B parameters)
 - May require prompt engineering for best results
 - Generation times vary based on input complexity
-- To use graphic card to unlock a much faster experience, needs specific cuda and torch versions that are respective to user's card and preinstalled drivers.
+- To ensure a significantly faster experience, needs specific cuda and torch versions respective to the user's Nvidia graphics card and drivers.
