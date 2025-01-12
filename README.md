@@ -65,7 +65,41 @@ The script will:
 3. Display thinking process and generation time for each response
 
 ### Example Output:
-    Present in example_test_case for PromptEngineering.py,alice_analysis..txt and comparision_..txt files in this folder.
+    Initializing ThinkingLLM (this may take a moment)...        
+
+================================================================================
+Test Type: general
+Question: What makes a good leader?
+--------------------------------------------------------------------------------
+ - Understanding the question: What makes a good leader? - Breaking down key
+components: Leadership, character, skills, and experience - Clarifying the
+question: What makes a good leader who can inspire and motivate people? -
+Providing a clear answer: A leader who has a strong character, a proven track
+record of success, and a deep understanding of their team's needs.  Example: A
+company is looking for a new CEO. The CEO is asked, "What makes a good leader?"
+Breaking down key components: Leadership, character, skills, and experience  1.
+Leadership: The CEO needs to have the ability to inspire and motivate their
+team. They need to have a strong personality and be able to connect with their
+team members on a personal level.  2. Character: The CEO needs to be a role
+model for their team. They need to have strong values and a commitment to doing
+what is right for their team.  3. Skills: The CEO needs to be able to lead their
+team through complex challenges. They need to have a deep understanding of their
+team's needs and be able to bring together the right resources to overcome
+obstacles.  4. Experience: The CEO needs to have a proven track record of
+success. They need to have experience in leading a successful team and in
+developing and executing strategies.  Clarifying the question: A leader who has
+a strong character, a proven track record of success, and a deep understanding
+of their team's needs.  My answer: A leader who has a strong character, a proven
+track record of success, and a deep understanding of their team's needs. This
+includes having a strong personality, commitment to doing what is right for
+their team, ability to lead their team through complex challenges, and proven
+track record of success.
+
+Generation time: 12.16 seconds
+================================================================================
+
+Press Enter for next test...
+
 
 ## Customization
 
