@@ -14,10 +14,11 @@ class ThinkingLLM:
             self.tokenizer.pad_token = self.tokenizer.eos_token
             self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
             
+        # Remove manual device assignment and let accelerate manage it
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
             torch_dtype=torch.float16,  # Use half precision
-            device_map="auto"  # Automatically handle device placement
+            device_map="auto"  # Automatically handle device placement (CPU or GPU)
         )
         
     def generate_thinking_prompt(self, question, prompt_type="general"):
@@ -63,7 +64,7 @@ My solution process:"""
             truncation=True,
             max_length=max_length,
             return_attention_mask=True
-        ).to(self.model.device)
+        ).to(self.model.device)  # Let the tokenizer know about the model's device
         
         start_time = time.time()
         outputs = self.model.generate(

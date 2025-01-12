@@ -19,11 +19,9 @@ PyYAML==6.0.2
 regex==2024.11.6
 requests==2.32.3
 safetensors==0.4.5
+setuptools==75.8.0
 sympy==1.13.1
 tokenizers==0.21.0
-torch==2.5.1
-torchaudio==2.5.1
-torchvision==0.20.1
 tqdm==4.67.1
 transformers==4.47.1
 typing_extensions==4.12.2
